@@ -1,0 +1,17 @@
+<div>
+    <form >
+        <label >Item Name : </label>
+        <input type="text" name="itemname" [(ngModel)]="itemname">
+        <br><br>
+        <label>Quantity : </label>
+        <input type="number" name="quantity" [(ngModel)]="quantity">
+        <br><br>
+        <label >Price : </label>
+        <input type="number" name="price" [(ngModel)]="price">
+        <br><br>
+        <label>Description : </label>
+        <input type="text" name="desc" [(ngModel)]="desc">
+        <br><br>
+        <button type="button" name="btn" (click)="addData()" [disabled]="(!itemname || !quantity || !price || !desc)">Submit</button>
+    </form>
+</div>
